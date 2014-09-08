@@ -19,9 +19,9 @@
         <h1 class="header">Gene Block Evolution</h1>
         <p class="header">Homepage</p>
         <ul>
-          <li><a class="buttons github" id="heatmaps" href = "#" onclick = "myform.formVar.value='heatmaps'; return false">View Heat-maps</a></li>
-          <li><a class="buttons github" id="combined" href ="#" onclick = "myform.formVar.value='combined';  return false">View Combined</a></li>
-          <form method=post name="myform" action="displayDirectory.html">
+          <li><a class="buttons github" id="heatmaps" href = "#" onclick = "document.myform.formVar.value='heatmaps'; return false">View Heat-maps</a></li>
+          <li><a class="buttons github" id="combined" href ="#" onclick = "document.myform.formVar.value='combined';  return false">View Combined</a></li>
+          <form method=get name="myform" action="displayDirectory.html">
 	    <input type="hidden" name="formVar" value="">
           </form>
         </ul>
