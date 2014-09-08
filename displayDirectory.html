@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Directory Contents</title>
+  <link rel="stylesheet" href="stylesheets/.displayStylesheet.css">
+  <script src=".sorttable.js"></script>
+</head>
+
+<body>
+
+  <div id="container">
+  
+    <h1>Directory Contents</h1>
+    
+    <table class="sortable">
+      <thead>
+        <tr>
+          <th>Filename</th>
+          <th>Type</th>
+          <th>Size <small>(bytes)</small></th>
+          <th>Date Modified</th>
+        </tr>
+      </thead>
+      <tbody>
+      <?php include "php/displayDirectory.php"; ?>
+      </tbody>
+    </table>
+  
+    <h2><?php print("<a href='$ahref'>$atext hidden files</a>"); ?></h2>
+    
+  </div>
+  
+</body>
+
+</html>
