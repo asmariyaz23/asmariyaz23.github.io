@@ -1,13 +1,17 @@
 <?php   
         $current_url = $GET['link'];
+        echo $current_url
         $url_dump = parse_url[$current_url];
+        echo $url_dump
         $query = $url_dump['query'];
+        echo $query
         $array = array();
         parse_str($query,$array);
         $folder = $array['formVar'];
+        echo $folder
         // Opens directory
         $myDirectory=opendir("/" + $folder);
-        
+        echo $myDirectory
         // Gets each entry
         while($entryName=readdir($myDirectory)) {
           $dirArray[]=$entryName;
